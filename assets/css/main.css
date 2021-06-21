@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #dcd1f3;
+}
+
+.myBtn, .myPrimaryBtn {
+  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -webkit-box-shadow: 0 0 0 3em #fff inset;
+  box-shadow: 0 0 0 3em #fff inset;
+  color: #181818;
+  border-radius: 50px;
+  height: 4em;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 1;
+  border: none;
+  background: transparent;
+}
+
+.myBtn:hover, .myPrimaryBtn:hover {
+  -webkit-box-shadow: 0 0 0 1px #fff inset;
+  box-shadow: 0 0 0 1px #fff inset;
+  color: #ffffff;
+}
+
+.myPrimaryBtn {
+  -webkit-box-shadow: 0 0 0 3em #b61984 inset;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  color: #ffffff;
+}
+
+.myPrimaryBtn:hover {
+  color: #b61984;
+  -webkit-box-shadow: 0 0 0 1px #b61984 inset;
+  box-shadow: 0 0 0 1px #b61984 inset;
+}
+/*# sourceMappingURL=main.css.map */

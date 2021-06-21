@@ -1,0 +1,29 @@
+.myBtn {
+  @include transition(all, 0.3s, ease);
+  @include box-shadow(0, 0, 0, $s-5, #fff, inset);
+  color: $text-color;
+  border-radius: $border-radius;
+  height: 4em;
+  width: 100%;
+  cursor: pointer;
+  font-size: $fz-1;
+  letter-spacing: $s-0;
+  font-weight: $fw-2;
+  line-height: 1;
+  border: none;
+  background: transparent;
+  &:hover {
+    @include box-shadow(0, 0, 0, 1px, #fff, inset);
+    color: $btn-color;
+  }
+}
+
+.myPrimaryBtn {
+  @extend .myBtn;
+  @include box-shadow(0, 0, 0, $s-5, $primary-color, inset);
+  color: $btn-color;
+  &:hover {
+    color: $primary-color;
+    @include box-shadow(0, 0, 0, 1px, $primary-color, inset);
+  }
+}

@@ -1,0 +1,17 @@
+@mixin transition($selector, $time, $type) {
+  transition: $selector $time $type;
+  -o-transition: $selector $time $type;
+  -moz-transition: $selector $time $type;
+  -webkit-transition: $selector $time $type;
+}
+
+@mixin text($fz, $fw, $c) {
+  font-size: $fz;
+  font-weight: $fw;
+  color: $c;
+}
+
+@mixin box-shadow($s1, $s2, $s3, $s4, $c, $type) {
+  -webkit-box-shadow: $s1 $s2 $s3 $s4 $c $type;
+  box-shadow: $s1 $s2 $s3 $s4 $c $type;
+}
