@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -19,13 +21,34 @@ a:hover, a:focus, a:active {
   background-color: #ffffff !important;
 }
 
+h1 {
+  font-size: 3.15rem;
+  font-weight: 700;
+  color: #191919;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #b61984;
+  margin-bottom: 0.5em;
+}
+
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 body {
   background-color: #ffffff;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   transition: margin-left 0.6s ease;
   -o-transition: margin-left 0.6s ease;
   -moz-transition: margin-left 0.6s ease;
@@ -164,15 +187,235 @@ li {
 
 .header .social-icon > a > i {
   color: #181818;
+  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.header .social-icon > a:hover i {
+  color: #b61984;
 }
 
 .header.active {
+  position: fixed;
   -webkit-box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.5);
   box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.5);
   transition: all 1s ease;
   -o-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -webkit-transition: all 1s ease;
+}
+
+.team .team__list {
+  background-color: #dcd1f3;
+}
+
+.team .team__list > img {
+  margin-top: -3.3em;
+}
+
+.team .team__list .team__item {
+  padding: 1em 2em;
+}
+
+.team .team__list .team__item .card {
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.team .team__list .team__item .card .card-header {
+  padding: 0;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.team .team__list .team__item .card .card-header img {
+  transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.team .team__list .team__item .card .card-body {
+  border-radius: 0 0 10px 10px;
+}
+
+.team .team__list .team__item .card .card-body h4 {
+  font-size: 0.75rem;
+  margin-bottom: 0.8em;
+}
+
+.team .team__list .team__item .card:hover, .team .team__list .team__item .card:focus {
+  -webkit-box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.team .team__list .team__item .card:hover .card-header img, .team .team__list .team__item .card:focus .card-header img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.course .course__item {
+  position: relative;
+  background: #ffffff;
+}
+
+.course .course__item form {
+  -webkit-box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1em 2em;
+  margin-top: 2em;
+}
+
+.course .course__item form .form__item {
+  position: relative;
+}
+
+.course .course__item form .form__item input {
+  border-radius: 50px;
+  padding: 1em 3em;
+  margin: 0.8em 0;
+}
+
+.course .course__item form .form__item select {
+  border-radius: 50px;
+  padding: 0 3em;
+  margin: 0.8em 0;
+}
+
+.course .course__item form .form__item textarea {
+  border-radius: 20px;
+  padding: 0.5em 3em;
+  margin: 0.8em 0;
+}
+
+.course .course__item form .form__item i {
+  color: #b61984;
+  position: absolute;
+  top: 50%;
+  left: 2em;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.course .course__item form .form-group.form__item i {
+  color: #b61984;
+  position: absolute;
+  top: 1.2em;
+  left: 1em;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.footer {
+  margin-top: -5em;
+  color: #ffffff;
+}
+
+.footer img {
+  margin-top: 0.5em;
+}
+
+.footer .container-fluid {
+  background: url(../images/footer_background.jpg) center no-repeat;
+  background-size: cover;
+  padding: 3em 2em;
+}
+
+.footer .container-fluid h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0.8em 0;
+}
+
+.footer .container-fluid ul > li {
+  margin: 0.5em 0;
+}
+
+.footer .container-fluid a {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  background: transparent;
+}
+
+.footer .container-fluid a > i {
+  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  background: transparent;
+  color: #ffffff;
+}
+
+.footer .container-fluid a > i:hover {
+  color: #181818;
+  background: transparent;
+}
+
+.footer .container-fluid a:hover {
+  background: transparent !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.footer .container-fluid .footer__item:first-child .socialIcon a {
+  margin-right: 0.8em;
+}
+
+.footer .container-fluid .footer__item:nth-child(2) a,
+.footer .container-fluid .footer__item:nth-child(3) a {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer .container-fluid .footer__item:last-child form input {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  background: transparent;
+  border-radius: 50px;
+  padding: 0.8em 0.5em;
+  margin: 0.8em 0;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .container-fluid .footer__item:last-child form input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.footer .container-fluid .footer__item:last-child form input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.footer .container-fluid .footer__item:last-child form input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.footer .container-fluid .footer__item:last-child form input::placeholder {
+  color: #ffffff;
+}
+
+.footer .container-fluid .footer__item:last-child form input:focus {
+  border: 1px solid white;
+}
+
+.footer .container-fluid .footer__item:last-child form input:focus-visible {
+  outline: none;
 }
 
 .header__nav {

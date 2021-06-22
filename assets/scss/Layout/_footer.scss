@@ -1,0 +1,71 @@
+.footer {
+  margin-top: -$s-8;
+  color: $footer-text-color;
+  img {
+    margin-top: $s-1;
+  }
+  .container-fluid {
+    background: url(../images/footer_background.jpg) center no-repeat;
+    background-size: cover;
+    padding: $s-5 $s-4;
+    h3 {
+      @include text($fz-5, $fw-3, $footer-text-color);
+      margin: $s-2 0;
+    }
+    ul > li {
+      margin: $s-1 0;
+    }
+    a {
+      @include text($fz-0, $fw-1, $footer-text-color);
+      text-decoration: none;
+      background: transparent;
+      > i {
+        @include transition(all, 0.3s, ease);
+        background: transparent;
+        color: $footer-text-color;
+        &:hover {
+          color: $text-color;
+          background: transparent;
+        }
+      }
+      &:hover {
+        background: transparent !important;
+        color: rgba(0, 0, 0, 0.7) !important;
+      }
+    }
+    .footer__item:first-child {
+      .socialIcon a {
+        margin-right: $s-2;
+      }
+    }
+    .footer__item:nth-child(2),
+    .footer__item:nth-child(3) {
+      a {
+        display: block;
+        border-bottom: 1px solid $dark-color;
+      }
+    }
+    .footer__item:last-child {
+      form input {
+        @include text($fz-1, $fw-1, $footer-text-color);
+        @include transition(all, 0.3s, ease);
+        background: transparent;
+        border-radius: $border-radius;
+        padding: $s-2 $s-1;
+        margin: $s-2 0;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        &::placeholder {
+          color: $footer-text-color;
+        }
+        &:focus {
+          border: 1px solid rgba(255, 255, 255, 1);
+        }
+        &:focus-visible {
+          outline: none;
+        }
+      }
+    }
+  }
+}

@@ -29,6 +29,7 @@ window.openNav = () => {
   document.getElementById("mySidenav").style.width = "80%";
   document.getElementById("mySidenav").style.overflowX = "visible";
   document.querySelector("body").style.marginLeft = "80%";
+  document.querySelector("html").style.overflow = "hidden";
   document.querySelectorAll(".header>nav>a").forEach((element) => {
     element.style.opacity = 0;
     element.style.visibility = "hidden";
@@ -39,6 +40,7 @@ window.closeNav = () => {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("mySidenav").style.overflowX = "hidden";
   document.querySelector("body").style.marginLeft = "0";
+  document.querySelector("html").style.overflow = "visible";
   document.querySelectorAll(".header>nav>a").forEach((element) => {
     element.style.opacity = 1;
     element.style.visibility = "visible";
@@ -63,5 +65,4 @@ window.onscroll = () => {
 
 // **Gsap Animation
 let tl = gsap.timeline({});
-tl.fromTo("#text", { y: 0 }, { y: 100 });
 // End Animation**

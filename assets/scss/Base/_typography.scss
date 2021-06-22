@@ -9,3 +9,15 @@ a {
     background-color: $bg-color !important;
   }
 }
+
+h1 {
+  @include text($fz-6, $fw-3, $heading-color);
+  line-height: 1.2;
+}
+h3 {
+  @include text($fz-5, $fw-3, $heading-color);
+}
+h4 {
+  @include text($fz-4, $fw-2, $primary-color);
+  margin-bottom: $s-1;
+}

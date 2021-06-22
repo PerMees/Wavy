@@ -1,0 +1,43 @@
+.team {
+  .team__list {
+    background-color: $bg-center-color;
+    > img {
+      margin-top: -$s-7;
+    }
+    .team__item {
+      padding: $s-3 $s-4;
+      .card {
+        padding: 0;
+        border-radius: $border-card-radius;
+        overflow: hidden;
+        border: none;
+        @include transition(all, 0.5s, ease);
+
+        .card-header {
+          padding: 0;
+          border-radius: $border-card-radius $border-card-radius 0 0;
+          overflow: hidden;
+          img {
+            @include transition(all, 0.5s, ease);
+          }
+        }
+        .card-body {
+          border-radius: 0 0 $border-card-radius $border-card-radius;
+          h4 {
+            font-size: $fz-0;
+            margin-bottom: $s-2;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          @include box-shadow(0, 10px, 20px, 5px, $dark-color, "");
+
+          .card-header img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

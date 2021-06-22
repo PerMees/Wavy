@@ -6,6 +6,7 @@ $text-color: #181818;
 $btn-color: #ffffff;
 $bg-center-color: #dcd1f3;
 $footer-text-color: #ffffff;
+$dark-color: rgba(0, 0, 0, 0.2);
 
 // Font size
 $fz-0: 0.75rem;
@@ -23,6 +24,7 @@ $fw-0: 300;
 $fw-1: 400;
 $fw-2: 600;
 $fw-3: 700;
+$fw-4: 900;
 
 // Spacing
 $s-0: 1px;
@@ -33,10 +35,15 @@ $s-4: 2em;
 $s-5: 3em;
 $s-6: 1.2em;
 $s-7: 3.3em;
+$s-8: 5em;
+$s-9: 10em;
+$s-10: 15em;
 
 // Border Radius
 $border-radius: 50px;
 $border-rounded: 50%;
+$border-card-radius: 10px;
+$border-textarea-radius: 20px;
 
 // Opacity
 $o-0: 1;

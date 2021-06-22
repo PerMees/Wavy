@@ -1,10 +1,12 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 body {
   background-color: $bg-color;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+
   @include transition(margin-left, 0.6s, ease);
 }
 

@@ -2,13 +2,16 @@
 @import "./Helpers/variables";
 @import "./Helpers/mixins";
 // Vendors
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 // Base
 @import "./Base/reset";
 @import "./Base/typography";
 @import "./Base/utils";
 // Layouts
 @import "./Layout/header";
+@import "./Layout/team";
+@import "./Layout/courses";
+@import "./Layout/footer";
 // Componets
 @import "./Components/nav";
 @import "./Components/buttons";

@@ -1,0 +1,47 @@
+.course {
+  .course__item {
+    position: relative;
+    background: $bg-color;
+    form {
+      @include box-shadow(0, 10px, 20px, 5px, $dark-color, "");
+      border-radius: $border-card-radius;
+      padding: $s-3 $s-4;
+      margin-top: $s-4;
+      .form__item {
+        position: relative;
+
+        input {
+          border-radius: $border-radius;
+          padding: $s-3 $s-5;
+          margin: $s-2 0;
+        }
+        select {
+          border-radius: $border-radius;
+          padding: 0 $s-5;
+          margin: $s-2 0;
+        }
+        textarea {
+          border-radius: $border-textarea-radius;
+          padding: $s-1 $s-5;
+          margin: $s-2 0;
+        }
+        i {
+          color: $primary-color;
+          position: absolute;
+          top: 50%;
+          left: $s-4;
+          transform: translate(0, -50%);
+        }
+      }
+      .form-group.form__item {
+        i {
+          color: $primary-color;
+          position: absolute;
+          top: $s-6;
+          left: $s-3;
+          transform: translate(0, -50%);
+        }
+      }
+    }
+  }
+}

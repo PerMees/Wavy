@@ -83,11 +83,16 @@
       margin: $s-2 $s-1;
       > i {
         color: $text-color;
+        @include transition(all, 0.3s, ease);
+      }
+      &:hover i {
+        color: $primary-color;
       }
     }
   }
 }
 .header.active {
+  position: fixed;
   @include box-shadow(0, 0, 10px, 0, rgba(204, 204, 204, 0.5), "");
   @include transition(all, 1s, ease);
 }
