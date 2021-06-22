@@ -1,0 +1,11 @@
+a {
+  text-decoration: none;
+  display: inline-block;
+  @include transition(all, 0.3s, ease);
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary-color !important;
+    background-color: $bg-color !important;
+  }
+}

@@ -12,6 +12,11 @@
 }
 
 @mixin box-shadow($s1, $s2, $s3, $s4, $c, $type) {
-  -webkit-box-shadow: $s1 $s2 $s3 $s4 $c $type;
-  box-shadow: $s1 $s2 $s3 $s4 $c $type;
+  @if $type != "" {
+    -webkit-box-shadow: $s1 $s2 $s3 $s4 $c $type;
+    box-shadow: $s1 $s2 $s3 $s4 $c $type;
+  } @else {
+    -webkit-box-shadow: $s1 $s2 $s3 $s4 $c;
+    box-shadow: $s1 $s2 $s3 $s4 $c;
+  }
 }

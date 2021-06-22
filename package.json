@@ -1,15 +1,22 @@
 {
-  "name": "WavyWeb",
+  "name": "wavyweb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PerMees/Wavy.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PerMees/Wavy/issues"
+  },
+  "homepage": "https://github.com/PerMees/Wavy#readme",
   "dependencies": {
-    "typescript": "^4.3.4"
+    "gsap": "^3.7.0"
   }
 }

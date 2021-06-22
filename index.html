@@ -15,16 +15,628 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
     <!-- Optional css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <a href="#" class="navbar-brand font-weight-bold"
+          ><img src="./assets/images/crest.png" alt="logo"
+        /></a>
+
+        <div class="header__nav" id="mySidenav">
+          <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">
+            <i class="fa fa-times"></i>
+          </a>
+          <div class="container text-center">
+            <img
+              src="./assets/images/crest.png"
+              alt="logo"
+              style="height: 8rem; width: auto; margin-bottom: 2rem"
+            />
+            <ul class="navbar-nav mr-auto">
+              <!-- Level one dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  id="dropdownMenu1"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                >
+                  Home
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul
+                  aria-labelledby="dropdownMenu1"
+                  class="dropdown-menu border-0"
+                >
+                  <!-- Level two dropdown-->
+                  <li class="dropdown-submenu">
+                    <a
+                      id="dropdownMenu2"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      class="dropdown-item dropdown-toggle"
+                      >Wavy
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul
+                      aria-labelledby="dropdownMenu2"
+                      class="dropdown-menu border-0"
+                    >
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Language</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Music Courses</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Music School</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Ballet</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      id="dropdownMenu2"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      class="dropdown-item dropdown-toggle"
+                      >Sunny
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul
+                      aria-labelledby="dropdownMenu2"
+                      class="dropdown-menu border-0"
+                    >
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Draw & Paint</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Illustration</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Language</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Acting</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      id="dropdownMenu2"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      class="dropdown-item dropdown-toggle"
+                      >Shady
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul
+                      aria-labelledby="dropdownMenu2"
+                      class="dropdown-menu border-0"
+                    >
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Music</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Contemporary Ballet</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Jazz Ballet</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Acting</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- End Level two -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  id="dropdownMenu1"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                  >About
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul
+                  aria-labelledby="dropdownMenu1"
+                  class="dropdown-menu border-0"
+                >
+                  <!-- Level two dropdown-->
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">About Us</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">About Me</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Our Team</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">History</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Contact</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item"
+                      >Coming Soon</a
+                    >
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">404</a>
+                  </li>
+                  <!-- End Level two -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  id="dropdownMenu1"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                  >Courses
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul
+                  aria-labelledby="dropdownMenu1"
+                  class="dropdown-menu border-0"
+                >
+                  <!-- Level two dropdown-->
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Courses</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item"
+                      >Single Course</a
+                    >
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Schedule</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Workshop</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item"
+                      >Workshops & Events</a
+                    >
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item"
+                      >Get Quote</a
+                    >
+                  </li>
+                  <!-- End Level two -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  id="dropdownMenu1"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                  >Blog
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul
+                  aria-labelledby="dropdownMenu1"
+                  class="dropdown-menu border-0"
+                >
+                  <!-- Level two dropdown-->
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item"
+                      >Standard view</a
+                    >
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item"
+                      >Columns view</a
+                    >
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item"
+                      >Simple view</a
+                    >
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item"
+                      >Grid view</a
+                    >
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      id="dropdownMenu2"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      class="dropdown-item dropdown-toggle"
+                      >Single Post
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul
+                      aria-labelledby="dropdownMenu2"
+                      class="dropdown-menu border-0"
+                    >
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Standard Post</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Grid Gallery Post</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Carousel & Columns Post</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Quote Post</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Link Post</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Audio Post</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Video Post</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      id="dropdownMenu2"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      class="dropdown-item dropdown-toggle"
+                      >Galleries
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul
+                      aria-labelledby="dropdownMenu2"
+                      class="dropdown-menu border-0"
+                    >
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Standard Post</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Carousel Post</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Grid Gallery</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Video Post</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Audio Post</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- End Level two -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  id="dropdownMenu1"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                  >Shop
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul
+                  aria-labelledby="dropdownMenu1"
+                  class="dropdown-menu border-0"
+                >
+                  <!-- Level two dropdown-->
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Products</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Cart</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item">Checkout</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="#" class="dropdown-item"
+                      >My Account</a
+                    >
+                  </li>
+                  <!-- End Level two -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  id="dropdownMenu1"
+                  href="#"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                  >Elements
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul
+                  aria-labelledby="dropdownMenu1"
+                  class="dropdown-menu border-0"
+                >
+                  <!-- Level two dropdown-->
+                  <li class="dropdown-submenu">
+                    <a
+                      id="dropdownMenu2"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      class="dropdown-item dropdown-toggle"
+                      >Base
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul
+                      aria-labelledby="dropdownMenu2"
+                      class="dropdown-menu border-0"
+                    >
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Headlines</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Buttons & Icons</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Images</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Organic Animation</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Inner Row & Column</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Countdown & Counter</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      id="dropdownMenu2"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      class="dropdown-item dropdown-toggle"
+                      >Common
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul
+                      aria-labelledby="dropdownMenu2"
+                      class="dropdown-menu border-0"
+                    >
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Price List & Progress Bar</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Google Maps</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Service</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Accordions & Tabs</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Card & Event</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Schedule & Step Line</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      id="dropdownMenu2"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      class="dropdown-item dropdown-toggle"
+                      >Presentational
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul
+                      aria-labelledby="dropdownMenu2"
+                      class="dropdown-menu border-0"
+                    >
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item">Team</a>
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Slider</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Testimonials</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Cost Calculator</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Social Media</a
+                        >
+                      </li>
+                      <li>
+                        <a tabindex="-1" href="#" class="dropdown-item"
+                          >Blog Layouts</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- End Level two -->
+                </ul>
+              </li>
+              <!-- End Level one -->
+            </ul>
+            <a href="tel:(+1) 555 234-8765" class="myPrimaryBtn">
+              <i class="fa fa-phone"></i>
+              (+1) 555 234-8765</a
+            >
+            <div class="social-icon">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="javascript:void(0)" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+
+    <section class="about">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nostrum expedita error, ab sapiente doloremque asperiores tempora omnis porro. Velit unde, praesentium impedit porro fuga molestias est voluptatibus quae voluptates, ratione quasi atque beatae mollitia? In commodi, quia quas dolorum, cupiditate rem earum aut assumenda esse consequatur optio error libero maiores quis possimus aliquam nemo sequi! Cum error voluptatem, beatae corporis quidem ex illum dignissimos eveniet. Delectus, suscipit deserunt doloribus architecto temporibus exercitationem sapiente eaque, totam unde ullam iusto, amet rem aperiam asperiores. Quasi laboriosam earum rem officia dolorum repudiandae laborum sequi nobis facere necessitatibus incidunt dolorem magni id, nemo a! Deleniti dicta numquam dignissimos excepturi iusto, perspiciatis dolores quis aliquam veritatis molestias consequatur ex voluptatum ipsam culpa, illum quasi libero! Accusantium quae recusandae sunt quia quibusdam rem voluptate neque beatae, dolorem eaque adipisci dolorum totam pariatur voluptates perferendis soluta illum. Dolor, nesciunt, molestiae neque ducimus reprehenderit sit modi laudantium voluptates ut deserunt facilis tempora, expedita rerum nemo optio mollitia vero voluptate distinctio quis illum. Est possimus sapiente vero sunt at ea beatae numquam illo nulla. Voluptas tempora, officiis rem temporibus fugit velit veritatis assumenda architecto soluta amet laborum ea quisquam nesciunt ex porro odit quidem quam, eveniet alias dicta quod nihil tempore magni placeat. Repellat accusantium fugit, explicabo facilis qui corporis! Quidem fuga dolores quisquam iusto voluptate eligendi necessitatibus in culpa a? Error nesciunt sint repudiandae provident cumque obcaecati perspiciatis quos quod tempora quia enim recusandae, sit iste maiores delectus praesentium nobis perferendis. Ad dolor dolorem corporis explicabo? Facere dicta consequuntur at illum dolorem voluptatibus, culpa reiciendis iure nobis quos quas, modi, qui ratione dolor tempore similique dolores repudiandae. Ad commodi aut autem consectetur id recusandae nulla quod cupiditate dolore veritatis, ab, voluptate voluptatum rem odit ducimus praesentium nemo, est explicabo tenetur nam doloremque et aperiam qui! Labore rem accusamus sint quod laborum. Soluta magni nemo laudantium recusandae repellat itaque modi voluptatem porro exercitationem expedita numquam quos iure sequi perferendis vel accusamus voluptates minus, distinctio veritatis eum temporibus iusto officiis dignissimos. Autem reprehenderit tenetur magnam sunt error sequi atque cumque magni necessitatibus ducimus velit voluptate natus vel consequatur aspernatur iusto, dolorum iste repellat consequuntur sint voluptatem! Repellat, ipsum corrupti. A, molestiae. At delectus suscipit error expedita magnam ipsum ex, et atque tenetur nesciunt, accusantium, sint libero a excepturi? Magni esse ea ducimus molestias ipsa cum vero cupiditate minima ullam, error, rerum a reprehenderit placeat asperiores sit officia ad nobis optio excepturi! Ea delectus asperiores nulla perspiciatis quia officia voluptates modi consequatur odio dignissimos placeat similique recusandae molestiae veritatis cum ducimus quo ex, numquam autem provident excepturi magni. Sit, vel? Nihil voluptatem rem distinctio, a temporibus quae quibusdam exercitationem ratione veniam nobis amet nostrum deserunt animi, non voluptatum quis aliquam soluta velit necessitatibus labore molestias, odit excepturi officia sint? Consectetur aperiam mollitia dicta similique non debitis, minus fugit dolore commodi earum beatae ab obcaecati aliquam maiores possimus pariatur nostrum voluptatibus fuga quidem id autem impedit aut consequatur. Eum cum rerum qui facilis aliquam corporis quam tenetur quae sed id! Aspernatur.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sapiente vitae alias consectetur nobis omnis, beatae officia ducimus, cupiditate nostrum quo? Fugiat illum adipisci quae quas, sequi possimus aliquam ad consequuntur. Culpa nisi molestiae, asperiores recusandae quo quis modi corrupti sed eos nam neque eaque magnam voluptatum pariatur nesciunt, placeat facilis, impedit explicabo nobis porro fuga deserunt a corporis! Tempora, id molestiae officiis saepe laboriosam voluptas aspernatur? Tenetur quia magni id enim, obcaecati laborum veritatis recusandae eligendi quidem dolores, ipsum nisi ad blanditiis facere unde. Ipsam maxime numquam magnam tempore non alias, voluptatem assumenda sed fugiat laborum. Cupiditate neque natus laborum velit repellat, dicta veniam, et enim voluptates temporibus perferendis reiciendis praesentium at dolore eligendi molestias facilis odio minus aliquid. Placeat quasi modi ratione dolor error suscipit rem, excepturi expedita quo cupiditate neque est sint reiciendis, obcaecati asperiores distinctio quidem optio qui eos nesciunt cum eaque molestiae exercitationem. Recusandae similique ipsa non hic, beatae qui sequi, corporis labore obcaecati dignissimos molestias eius. Inventore sed facere molestias? Porro recusandae voluptatibus quaerat aut maxime ex libero consectetur! Sunt quas vitae id nobis obcaecati eveniet dicta quaerat laborum, veritatis suscipit totam, velit iusto itaque asperiores voluptate dolores possimus porro a. Reiciendis, ut voluptatem.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum odio asperiores natus, ipsum aliquid distinctio repellat vitae pariatur, nobis itaque vero cum? Adipisci rerum voluptatem, repellendus ex doloribus fugit suscipit impedit itaque vero molestiae. Sit harum architecto qui molestiae nihil quis deleniti. Debitis dolorem sequi minus quibusdam veniam doloribus distinctio, quam pariatur adipisci magni, maxime molestias cum voluptatum. Consectetur ullam necessitatibus accusamus quae praesentium est sit magnam aliquam impedit aperiam. Adipisci maxime quae officiis porro nostrum aspernatur, perspiciatis consequatur, deserunt repellat quo quasi vel? Ab quasi soluta omnis itaque voluptatem optio quos debitis aspernatur sunt consectetur quis tempore, animi corrupti? Minima laboriosam fugit officiis, error laudantium, repellat aperiam, unde ex magnam et sed eius earum saepe? Architecto illo quia, similique quae sed eius a excepturi, nihil possimus voluptate cumque! Numquam ab facilis, sapiente veritatis tempora corrupti ex esse reprehenderit tenetur consequatur natus exercitationem vero quas ipsam eum ducimus obcaecati commodi, dignissimos, impedit quidem! Incidunt commodi inventore illo provident molestias id ab cum numquam, ducimus qui expedita repellendus reiciendis officia! Reiciendis accusantium dolorem totam voluptas assumenda nulla neque provident explicabo culpa. Libero veniam vitae, maiores explicabo animi culpa aspernatur dignissimos dolor illum odit corporis iure quidem repudiandae unde hic iste eius quaerat tenetur doloremque ab iusto ut qui molestias obcaecati? Rem quia necessitatibus blanditiis ab repudiandae. Maiores quos, accusantium, ea perspiciatis sit, praesentium quibusdam illo neque possimus minima incidunt blanditiis repellendus quisquam quam culpa sunt perferendis. Harum sint nostrum tempore accusantium facere libero, dicta nisi necessitatibus est nemo nihil, alias repellat consectetur saepe odit sapiente aliquam exercitationem totam voluptatum culpa qui ipsam corporis fuga. Modi tempora, esse aliquid maiores eos iure ea vel ipsum, dicta maxime harum magnam rerum nulla perferendis porro obcaecati id accusamus aut ab sed consectetur provident, tenetur sapiente. Quis, quo placeat autem asperiores saepe debitis incidunt ex dolore iusto, reprehenderit fuga quod ratione, necessitatibus recusandae dolorem. Rem omnis veniam temporibus incidunt iure. Recusandae quas tempore fugit ipsam eum, sapiente hic dolorem, quaerat consequatur saepe, debitis officia ullam neque eius exercitationem eos ipsa cum quasi corrupti fuga quae error at provident. Hic distinctio praesentium in cum fuga facilis voluptatem. Quo labore vero praesentium voluptates fugit est explicabo mollitia? Asperiores unde repellat et voluptatum quos cumque dolore! Doloribus vitae porro ab deleniti, totam voluptatum sed incidunt beatae perferendis quisquam dicta consectetur dolore animi harum quod facere exercitationem optio deserunt impedit. Quaerat necessitatibus ea iusto qui temporibus magnam eaque! Consectetur animi soluta quod fugiat adipisci amet reiciendis saepe minus facilis provident a vero dicta quam laudantium fugit molestiae dolores, deleniti aliquam perspiciatis sunt quis corporis nisi. Nemo quam dignissimos, accusamus totam quod perspiciatis blanditiis! Dignissimos distinctio eius libero consequatur architecto illo beatae odit provident maxime modi, eaque at aliquam ipsum laudantium, quaerat, est numquam laborum. Non sint itaque error reprehenderit, cupiditate amet eligendi voluptatem! Sequi necessitatibus eum consequatur cumque magni perspiciatis, sint culpa praesentium eos, aliquid, esse sapiente tempore corrupti ullam dicta ipsum sunt nostrum explicabo ea odit iusto minima quas accusantium ab. Dolorum facere libero obcaecati incidunt voluptatibus.
+    </section>
+    <section class="team">
+    </section>
+    <section class="course"></section>
+    <footer class="footer"></footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

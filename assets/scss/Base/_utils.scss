@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $bg-color;
+  overflow-x: hidden;
+  @include transition(margin-left, 0.6s, ease);
+}
+
+img {
+  width: 100%;
+}
+
+button > i {
+  color: $primary-color;
+}
+
+li {
+  display: block;
+}
