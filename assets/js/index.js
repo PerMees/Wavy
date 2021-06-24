@@ -1,6 +1,6 @@
 import gsap from "../../node_modules/gsap/index.js";
-
-// **Multi Level dropdowns
+import ScrollTrigger from "../../node_modules/gsap/ScrollTrigger.js";
+/**  Multi Level dropdowns*/
 $(function () {
   $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function (event) {
     event.preventDefault();
@@ -22,14 +22,15 @@ $(function () {
       });
   });
 });
-// End Multi level dropdown**
+/**  End Multi level dropdown*/
 
-// **Site Nav
+/**  Site Nav*/
 window.openNav = () => {
-  document.getElementById("mySidenav").style.width = "80%";
-  document.getElementById("mySidenav").style.overflowX = "visible";
-  document.querySelector("body").style.marginLeft = "80%";
+  document.querySelector("#mySidenav").style.width = "80%";
+  document.querySelector("#mySidenav").style.overflowX = "visible";
+  document.querySelector("html").style.marginLeft = "80%";
   document.querySelector("html").style.overflow = "hidden";
+  document.querySelector("html").classList.add("opened");
   document.querySelectorAll(".header>nav>a").forEach((element) => {
     element.style.opacity = 0;
     element.style.visibility = "hidden";
@@ -37,18 +38,19 @@ window.openNav = () => {
 };
 
 window.closeNav = () => {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("mySidenav").style.overflowX = "hidden";
-  document.querySelector("body").style.marginLeft = "0";
+  document.querySelector("#mySidenav").style.width = "0";
+  document.querySelector("#mySidenav").style.overflowX = "hidden";
+  document.querySelector("html").style.marginLeft = "0";
   document.querySelector("html").style.overflow = "visible";
+  document.querySelector("html").classList.remove("opened");
   document.querySelectorAll(".header>nav>a").forEach((element) => {
     element.style.opacity = 1;
     element.style.visibility = "visible";
   });
 };
-// End Site Nav**
+/**  End Site Nav */
 
-// **scroll
+/**  Change Header when srcoll*/
 window.onscroll = () => {
   let $ = (e) => document.querySelector(e);
   if (window.scrollY > 300) {
@@ -61,8 +63,55 @@ window.onscroll = () => {
     $(".header").classList.remove("active");
   }
 };
-// end**
+/**  End Header when srcoll*/
 
-// **Gsap Animation
-let tl = gsap.timeline({});
-// End Animation**
+/**  Gsap Animation*/
+const tl = gsap.timeline({
+  smoothChildTiming: true,
+});
+gsap.registerPlugin(ScrollTrigger);
+
+const animateOnScroll = (list, name) => {
+  for (let i = 0; i < list.length; i++) {
+    gsap.to(`#${name}-${i + 1}`, {
+      scrollTrigger: {
+        trigger: `#${name}-${i + 1}`,
+        scrubt: 1,
+        start: "20% 90%",
+        end: () =>
+          "+=" + document.querySelector(`#${name}-${i + 1}`).offSetWidth,
+        marker: true,
+      },
+      opacity: 1,
+      delay: 0.3,
+    });
+  }
+};
+// Carousel
+tl.fromTo(
+  ".about > div > div > div:first-child",
+  { x: -100, opacity: 0 },
+  { x: 0, opacity: 1 },
+  0.5
+);
+tl.fromTo(
+  ".about > div > div > div:last-child",
+  { opacity: 0 },
+  { opacity: 1 },
+  ">-0.3"
+);
+// End Animation Carousel
+
+// Team
+
+const teamList = document.querySelectorAll(".team__item");
+animateOnScroll(teamList, "team__item");
+
+// End Team
+
+// Courses
+const courseList = document.querySelectorAll(".course__item");
+animateOnScroll(courseList, "course__item");
+// End Courses
+
+/** End Gsap Animation */

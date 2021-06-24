@@ -5,13 +5,15 @@
       margin-top: -$s-7;
     }
     .team__item {
+      @include transition(all, 0.1s, ease);
       padding: $s-3 $s-4;
+      opacity: 0;
       .card {
+        @include transition(all, 0.5s, ease);
         padding: 0;
         border-radius: $border-card-radius;
         overflow: hidden;
         border: none;
-        @include transition(all, 0.5s, ease);
 
         .card-header {
           padding: 0;

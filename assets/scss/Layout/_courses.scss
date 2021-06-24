@@ -1,7 +1,12 @@
 .course {
+  @include transition(all, 0.3s, ease);
   .course__item {
+    @include transition(all, 0.1s, ease);
     position: relative;
     background: $bg-color;
+    opacity: 0;
+    border-radius: $border-card-radius;
+
     form {
       @include box-shadow(0, 10px, 20px, 5px, $dark-color, "");
       border-radius: $border-card-radius;

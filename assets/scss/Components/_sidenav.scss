@@ -31,3 +31,20 @@
     margin: 0 auto;
   }
 }
+
+.navbar-nav .dropdown-menu {
+  height: 0 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.dropdown-menu.show {
+  height: 100% !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.dropdown-menu {
+  display: block !important;
+  @include transition(all, 0.3s, ease);
+}
