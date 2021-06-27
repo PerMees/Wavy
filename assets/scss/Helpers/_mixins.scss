@@ -22,20 +22,20 @@
 }
 
 @mixin mediaQuery($size) {
-  @if $size >=$sm {
-    @media screen and (min-width: $sm) {
-      @content;
-    }
-  } @else if $size>=$md {
-    @media screen and (min-width: $md) {
+  @if $size >=$xl {
+    @media screen and (min-width: $xl) {
       @content;
     }
   } @else if $size>=$lg {
     @media screen and (min-width: $lg) {
       @content;
     }
-  } @else if $size>=$xl {
-    @media screen and (min-width: $xl) {
+  } @else if $size>=$md {
+    @media screen and (min-width: $md) {
+      @content;
+    }
+  } @else if $size>=$sm {
+    @media screen and (min-width: $sm) {
       @content;
     }
   }

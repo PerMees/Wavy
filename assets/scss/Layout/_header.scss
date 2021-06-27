@@ -7,6 +7,9 @@
   width: 100%;
   background-color: $bg-color;
   z-index: 1000;
+  img#logo {
+    width: 3rem;
+  }
   nav > a > i {
     color: $primary-color;
     font-size: 2rem;
@@ -22,6 +25,17 @@
       position: absolute;
       top: $s-6;
       right: $s-5;
+    }
+  }
+  a.dropdown-toggle[aria-expanded="false"] {
+    i::before {
+      @include transition(all, 0.5s, ease);
+      transform: rotate(0);
+    }
+  }
+  a.dropdown-toggle[aria-expanded="true"] {
+    i::before {
+      transform: rotate(180deg);
     }
   }
   .dropdown-submenu {
@@ -40,10 +54,6 @@
     > a:first-child {
       order: 1;
       margin: 0 2rem;
-      img {
-        height: $fz-7;
-        width: auto;
-      }
     }
     .nav-item {
       @include transition(all, 0.5s, ease);
@@ -54,7 +64,7 @@
     .nav-link {
       line-height: 1.1;
       padding: $s-3 $s-4;
-      @include text($fz-2, $fw-1, $text-color);
+      @include text($fz-2, $fw-2, $text-color);
     }
     .dropdown-item.dropdown-toggle {
       line-height: 1.1;
@@ -91,11 +101,40 @@
     }
   }
 
-  @include mediaQuery(576px) {
+  @include mediaQuery($xl) {
+    overflow: visible;
+    background-color: transparent;
+    #logo {
+      display: none;
+    }
+    .navbar {
+      display: none;
+    }
   }
 }
+
 .header.active {
-  position: fixed;
   @include box-shadow(0, 0, 10px, 0, rgba(204, 204, 204, 0.5), "");
   @include transition(all, 1s, ease);
+  position: fixed;
+  background-color: $bg-color;
+  padding: 0;
+}
+
+.header.activeLG {
+  position: fixed;
+  background-color: $bg-color;
+  height: $s-7-5;
+  overflow-x: visible;
+  .navbar {
+    padding: 0;
+  }
+}
+
+.header__nav.active {
+  @include box-shadow(0, 0, 10px, 0, rgba(204, 204, 204, 0.5), "");
+  @include transition(all, 1s, ease);
+  position: fixed;
+  background-color: $bg-color;
+  padding: 0;
 }

@@ -14,12 +14,24 @@ a {
 
 h1 {
   @include text($fz-6, $fw-3, $heading-color);
+  @include mediaQuery($xl) {
+    font-size: $fz-7-5;
+  }
   line-height: 1.2;
 }
 h3 {
   @include text($fz-5, $fw-3, $heading-color);
+  @include mediaQuery($xl) {
+    font-size: $fz-5;
+  }
 }
 h4 {
   @include text($fz-4, $fw-2, $primary-color);
+  @include mediaQuery($xl) {
+    font-size: $fz-4-5;
+  }
   margin-bottom: $s-1;
+}
+p {
+  @include text($fz-2, $fw-1, $text-color);
 }

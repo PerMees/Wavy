@@ -28,9 +28,9 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-xl">
         <a href="#" class="navbar-brand font-weight-bold"
-          ><img src="./assets/images/crest.png" alt="logo"
+          ><img src="./assets/images/crest.png" alt="logo" id="logo"
         /></a>
 
         <div class="header__nav" id="mySidenav">
@@ -38,573 +38,770 @@
             <i class="fa fa-times"></i>
           </a>
           <div class="container text-center">
-            <img
-              src="./assets/images/crest.png"
-              alt="logo"
-              style="height: 8rem; width: auto; margin-bottom: 2rem"
-            />
-            <ul class="navbar-nav mr-auto">
-              <!-- Level one dropdown -->
-              <li class="nav-item dropdown">
-                <a
-                  id="dropdownMenu1"
-                  href="#"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  class="nav-link dropdown-toggle"
-                >
-                  Home
-                  <i class="fa fa-angle-down"></i>
+            <div class="myrow">
+              <img
+                src="./assets/images/crest.png"
+                alt="logo"
+                class="logo"
+                style="max-width: 10rem; margin-bottom: 1rem"
+              />
+              <ul class="navbar-nav">
+                <!-- Level one dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    id="dropdownMenu1"
+                    href="#"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="nav-link dropdown-toggle"
+                  >
+                    Home
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                  <ul
+                    aria-labelledby="dropdownMenu1"
+                    class="dropdown-menu border-0"
+                  >
+                    <!-- Level two dropdown-->
+                    <li class="dropdown-submenu">
+                      <a
+                        id="dropdownMenu2"
+                        href="#"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        class="dropdown-item dropdown-toggle"
+                        >Wavy
+                        <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul
+                        aria-labelledby="dropdownMenu2"
+                        class="dropdown-menu border-0"
+                      >
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Language</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Music Courses</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Music School</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Ballet</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a
+                        id="dropdownMenu2"
+                        href="#"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        class="dropdown-item dropdown-toggle"
+                        >Sunny
+                        <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul
+                        aria-labelledby="dropdownMenu2"
+                        class="dropdown-menu border-0"
+                      >
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Draw & Paint</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Illustration</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Language</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Acting</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a
+                        id="dropdownMenu2"
+                        href="#"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        class="dropdown-item dropdown-toggle"
+                        >Shady
+                        <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul
+                        aria-labelledby="dropdownMenu2"
+                        class="dropdown-menu border-0"
+                      >
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Music</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Contemporary Ballet</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Jazz Ballet</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Acting</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- End Level two -->
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    id="dropdownMenu1"
+                    href="#"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="nav-link dropdown-toggle"
+                    >About
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                  <ul
+                    aria-labelledby="dropdownMenu1"
+                    class="dropdown-menu border-0"
+                  >
+                    <!-- Level two dropdown-->
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >About Me</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Our Team</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >History</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Testimonials</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Contact</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Coming Soon</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">404</a>
+                    </li>
+                    <!-- End Level two -->
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    id="dropdownMenu1"
+                    href="#"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="nav-link dropdown-toggle"
+                    >Courses
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                  <ul
+                    aria-labelledby="dropdownMenu1"
+                    class="dropdown-menu border-0"
+                  >
+                    <!-- Level two dropdown-->
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Courses</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Single Course</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Schedule</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Workshop</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Workshops & Events</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Get Quote</a
+                      >
+                    </li>
+                    <!-- End Level two -->
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    id="dropdownMenu1"
+                    href="#"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="nav-link dropdown-toggle"
+                    >Blog
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                  <ul
+                    aria-labelledby="dropdownMenu1"
+                    class="dropdown-menu border-0"
+                  >
+                    <!-- Level two dropdown-->
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Standard view</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Columns view</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Simple view</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Grid view</a
+                      >
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a
+                        id="dropdownMenu2"
+                        href="#"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        class="dropdown-item dropdown-toggle"
+                        >Single Post
+                        <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul
+                        aria-labelledby="dropdownMenu2"
+                        class="dropdown-menu border-0"
+                      >
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Standard Post</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Grid Gallery Post</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Carousel & Columns Post</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Quote Post</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Link Post</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Audio Post</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Video Post</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a
+                        id="dropdownMenu2"
+                        href="#"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        class="dropdown-item dropdown-toggle"
+                        >Galleries
+                        <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul
+                        aria-labelledby="dropdownMenu2"
+                        class="dropdown-menu border-0"
+                      >
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Standard Post</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Carousel Post</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Grid Gallery</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Video Post</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Audio Post</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- End Level two -->
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    id="dropdownMenu1"
+                    href="#"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="nav-link dropdown-toggle"
+                    >Shop
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                  <ul
+                    aria-labelledby="dropdownMenu1"
+                    class="dropdown-menu border-0"
+                  >
+                    <!-- Level two dropdown-->
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Products</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item">Cart</a>
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >Checkout</a
+                      >
+                    </li>
+                    <li>
+                      <a tabindex="-1" href="#" class="dropdown-item"
+                        >My Account</a
+                      >
+                    </li>
+                    <!-- End Level two -->
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    id="dropdownMenu1"
+                    href="#"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    class="nav-link dropdown-toggle"
+                    >Elements
+                    <i class="fa fa-angle-down"></i>
+                  </a>
+                  <ul
+                    aria-labelledby="dropdownMenu1"
+                    class="dropdown-menu border-0"
+                  >
+                    <!-- Level two dropdown-->
+                    <li class="dropdown-submenu">
+                      <a
+                        id="dropdownMenu2"
+                        href="#"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        class="dropdown-item dropdown-toggle"
+                        >Base
+                        <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul
+                        aria-labelledby="dropdownMenu2"
+                        class="dropdown-menu border-0"
+                      >
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Headlines</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Buttons & Icons</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Images</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Organic Animation</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Inner Row & Column</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Countdown & Counter</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a
+                        id="dropdownMenu2"
+                        href="#"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        class="dropdown-item dropdown-toggle"
+                        >Common
+                        <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul
+                        aria-labelledby="dropdownMenu2"
+                        class="dropdown-menu border-0"
+                      >
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Price List & Progress Bar</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Google Maps</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Service</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Accordions & Tabs</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Card & Event</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Schedule & Step Line</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a
+                        id="dropdownMenu2"
+                        href="#"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        class="dropdown-item dropdown-toggle"
+                        >Presentational
+                        <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul
+                        aria-labelledby="dropdownMenu2"
+                        class="dropdown-menu border-0"
+                      >
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Team</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Slider</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Testimonials</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Cost Calculator</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Social Media</a
+                          >
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="#" class="dropdown-item"
+                            >Blog Layouts</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- End Level two -->
+                  </ul>
+                </li>
+                <!-- End Level one -->
+              </ul>
+              <a href="tel:(+1) 555 234-8765" class="myPrimaryBtn">
+                <i class="fa fa-phone"></i>
+                (+1) 555 234-8765</a
+              >
+              <div class="social-icon">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
                 </a>
-                <ul
-                  aria-labelledby="dropdownMenu1"
-                  class="dropdown-menu border-0"
-                >
-                  <!-- Level two dropdown-->
-                  <li class="dropdown-submenu">
-                    <a
-                      id="dropdownMenu2"
-                      href="#"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      class="dropdown-item dropdown-toggle"
-                      >Wavy
-                      <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul
-                      aria-labelledby="dropdownMenu2"
-                      class="dropdown-menu border-0"
-                    >
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Language</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Music Courses</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Music School</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Ballet</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a
-                      id="dropdownMenu2"
-                      href="#"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      class="dropdown-item dropdown-toggle"
-                      >Sunny
-                      <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul
-                      aria-labelledby="dropdownMenu2"
-                      class="dropdown-menu border-0"
-                    >
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Draw & Paint</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Illustration</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Language</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Acting</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a
-                      id="dropdownMenu2"
-                      href="#"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      class="dropdown-item dropdown-toggle"
-                      >Shady
-                      <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul
-                      aria-labelledby="dropdownMenu2"
-                      class="dropdown-menu border-0"
-                    >
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Music</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Contemporary Ballet</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Jazz Ballet</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Acting</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <!-- End Level two -->
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  id="dropdownMenu1"
-                  href="#"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  class="nav-link dropdown-toggle"
-                  >About
-                  <i class="fa fa-angle-down"></i>
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
                 </a>
-                <ul
-                  aria-labelledby="dropdownMenu1"
-                  class="dropdown-menu border-0"
-                >
-                  <!-- Level two dropdown-->
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">About Us</a>
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">About Me</a>
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">Our Team</a>
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">History</a>
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item"
-                      >Testimonials</a
-                    >
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">Contact</a>
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item"
-                      >Coming Soon</a
-                    >
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">404</a>
-                  </li>
-                  <!-- End Level two -->
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  id="dropdownMenu1"
-                  href="#"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  class="nav-link dropdown-toggle"
-                  >Courses
-                  <i class="fa fa-angle-down"></i>
+                <a href="#">
+                  <i class="fab fa-youtube"></i>
                 </a>
-                <ul
-                  aria-labelledby="dropdownMenu1"
-                  class="dropdown-menu border-0"
-                >
-                  <!-- Level two dropdown-->
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">Courses</a>
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item"
-                      >Single Course</a
-                    >
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">Schedule</a>
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">Workshop</a>
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item"
-                      >Workshops & Events</a
-                    >
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item"
-                      >Get Quote</a
-                    >
-                  </li>
-                  <!-- End Level two -->
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  id="dropdownMenu1"
-                  href="#"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  class="nav-link dropdown-toggle"
-                  >Blog
-                  <i class="fa fa-angle-down"></i>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
                 </a>
-                <ul
-                  aria-labelledby="dropdownMenu1"
-                  class="dropdown-menu border-0"
-                >
-                  <!-- Level two dropdown-->
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item"
-                      >Standard view</a
-                    >
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item"
-                      >Columns view</a
-                    >
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item"
-                      >Simple view</a
-                    >
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item"
-                      >Grid view</a
-                    >
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a
-                      id="dropdownMenu2"
-                      href="#"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      class="dropdown-item dropdown-toggle"
-                      >Single Post
-                      <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul
-                      aria-labelledby="dropdownMenu2"
-                      class="dropdown-menu border-0"
-                    >
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Standard Post</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Grid Gallery Post</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Carousel & Columns Post</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Quote Post</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Link Post</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Audio Post</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Video Post</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a
-                      id="dropdownMenu2"
-                      href="#"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      class="dropdown-item dropdown-toggle"
-                      >Galleries
-                      <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul
-                      aria-labelledby="dropdownMenu2"
-                      class="dropdown-menu border-0"
-                    >
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Standard Post</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Carousel Post</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Grid Gallery</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Video Post</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Audio Post</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <!-- End Level two -->
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  id="dropdownMenu1"
-                  href="#"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  class="nav-link dropdown-toggle"
-                  >Shop
-                  <i class="fa fa-angle-down"></i>
-                </a>
-                <ul
-                  aria-labelledby="dropdownMenu1"
-                  class="dropdown-menu border-0"
-                >
-                  <!-- Level two dropdown-->
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">Products</a>
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">Cart</a>
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">Checkout</a>
-                  </li>
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item"
-                      >My Account</a
-                    >
-                  </li>
-                  <!-- End Level two -->
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  id="dropdownMenu1"
-                  href="#"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  class="nav-link dropdown-toggle"
-                  >Elements
-                  <i class="fa fa-angle-down"></i>
-                </a>
-                <ul
-                  aria-labelledby="dropdownMenu1"
-                  class="dropdown-menu border-0"
-                >
-                  <!-- Level two dropdown-->
-                  <li class="dropdown-submenu">
-                    <a
-                      id="dropdownMenu2"
-                      href="#"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      class="dropdown-item dropdown-toggle"
-                      >Base
-                      <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul
-                      aria-labelledby="dropdownMenu2"
-                      class="dropdown-menu border-0"
-                    >
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Headlines</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Buttons & Icons</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Images</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Organic Animation</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Inner Row & Column</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Countdown & Counter</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a
-                      id="dropdownMenu2"
-                      href="#"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      class="dropdown-item dropdown-toggle"
-                      >Common
-                      <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul
-                      aria-labelledby="dropdownMenu2"
-                      class="dropdown-menu border-0"
-                    >
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Price List & Progress Bar</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Google Maps</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Service</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Accordions & Tabs</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Card & Event</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Schedule & Step Line</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a
-                      id="dropdownMenu2"
-                      href="#"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      class="dropdown-item dropdown-toggle"
-                      >Presentational
-                      <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul
-                      aria-labelledby="dropdownMenu2"
-                      class="dropdown-menu border-0"
-                    >
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item">Team</a>
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Slider</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Testimonials</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Cost Calculator</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Social Media</a
-                        >
-                      </li>
-                      <li>
-                        <a tabindex="-1" href="#" class="dropdown-item"
-                          >Blog Layouts</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <!-- End Level two -->
-                </ul>
-              </li>
-              <!-- End Level one -->
-            </ul>
-            <a href="tel:(+1) 555 234-8765" class="myPrimaryBtn">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="javascript:void(0)" onclick="openNav()" id="openNav">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+      <nav class="header__nav__xl">
+        <div class="container">
+          <div class="row">
+            <div class="col-1">
+              <a href="">
+                <img
+                  src="./assets/images/crest.png"
+                  alt=""
+                  style="max-width: 5rem"
+                />
+              </a>
+            </div>
+            <nav class="myNavbar col-7">
+              <div class="row">
+                <div class="col-4"></div>
+                <div class="menu col-2 pt-4 text-center">
+                  <a href="">Home</a>
+                  <div class="row submenu text-left">
+                    <div class="col-4">
+                      <a href="" style="border-bottom: 2px solid #b61984"
+                        >Wavy</a
+                      >
+                      <a href="">Language</a>
+                      <a href="">Music Courses</a>
+                      <a href="">Music School</a>
+                      <a href="">Ballet</a>
+                    </div>
+                    <div class="col-4">
+                      <a href="" style="border-bottom: 2px solid #b61984"
+                        >Sunny</a
+                      >
+                      <a href="">Draw & Paint</a>
+                      <a href="">Illustration</a>
+                      <a href="">Language</a>
+                      <a href="">Acting</a>
+                    </div>
+                    <div class="col-4">
+                      <a href="" style="border-bottom: 2px solid #b61984"
+                        >Shady</a
+                      >
+                      <a href="">Music</a>
+                      <a href="">Contemporary Ballet</a>
+                      <a href="">Jazz Ballet</a>
+                      <a href="">Acting</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu col-2 pt-4 text-center active">
+                  <a href="">About</a>
+                  <div class="row submenu text-left">
+                    <a href="">About us</a>
+                    <a href="">About me</a>
+                    <a href="">Our Team</a>
+                    <a href="">History</a>
+                    <a href="">Testimonials</a>
+                    <a href="">Contact</a>
+                    <a href="">Coming Soon</a>
+                    <a href="">404</a>
+                  </div>
+                </div>
+                <div class="menu col-2 pt-4 text-center">
+                  <a href="">Courses</a>
+                  <div class="row submenu text-left">
+                    <a href="">Courses</a>
+                    <a href="">Single Course</a>
+                    <a href="">Schedule</a>
+                    <a href="">Workshop</a>
+                    <a href="">Workshops & Events</a>
+                    <a href="">Get Quote</a>
+                  </div>
+                </div>
+                <div class="menu col-2 pt-4 text-center">
+                  <a href="">Blog</a>
+                  <div class="row submenu text-left">
+                    <a href="">Standard view</a>
+                    <a href="">Columns view</a>
+                    <a href="">Simple view</a>
+                    <a href="">Grid view</a>
+                    <a href="" class="btnsubmenu-right-1">Simple Post</a>
+                    <div class="submenu-right-1">
+                      <a href="">Standard Post</a>
+                      <a href="">Grid Gallery Post</a>
+                      <a href="">Carousel & Columns Post</a>
+                      <a href="">Quote Post</a>
+                      <a href="">Link Post</a>
+                      <a href="">Audio Post</a>
+                      <a href="">Video Post</a>
+                    </div>
+                    <a href="" class="btnsubmenu-right-2">Gallery</a>
+                    <div class="submenu-right-2">
+                      <a href="">Standard Post</a>
+                      <a href="">Carousel Post</a>
+                      <a href="">Grid Gallery</a>
+                      <a href="">Video Post</a>
+                      <a href="">Audio Post</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu col-2 pt-4 text-center">
+                  <a href="">Shop</a>
+                  <div class="row submenu text-left">
+                    <a href="">Products</a>
+                    <a href="">Cart</a>
+                    <a href="">Checkout</a>
+                    <a href="">My Account</a>
+                  </div>
+                </div>
+                <div class="menu col-2 pt-4 text-center">
+                  <a href="">Elements</a>
+                  <div class="row submenu text-left">
+                    <div class="col-4">
+                      <a href="" style="border-bottom: 2px solid #b61984"
+                        >Base</a
+                      >
+                      <a href="">Headlines</a>
+                      <a href="">Buttons & Icons</a>
+                      <a href="">Images</a>
+                      <a href="">Organic Animation</a>
+                      <a href="">Inner Row & Column</a>
+                      <a href="">Countdown & Counter</a>
+                    </div>
+                    <div class="col-4">
+                      <a href="" style="border-bottom: 2px solid #b61984"
+                        >Common</a
+                      >
+                      <a href="">Price List & Progress Bar</a>
+                      <a href="">Google Maps</a>
+                      <a href="">Service</a>
+                      <a href="">Accordions & Tabs</a>
+                      <a href="">Card & Event</a>
+                      <a href="">Schedule & Step Line</a>
+                    </div>
+                    <div class="col-4">
+                      <a href="" style="border-bottom: 2px solid #b61984"
+                        >Presentational</a
+                      >
+                      <a href="">Team</a>
+                      <a href="">Slider</a>
+                      <a href="">Testimonials</a>
+                      <a href="">Cost Calculator</a>
+                      <a href="">Social Media</a>
+                      <a href="">Blog Layouts</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <a href="tel:(+1) 555 234-8765" class="myPrimaryBtn col-2">
               <i class="fa fa-phone"></i>
               (+1) 555 234-8765</a
             >
-            <div class="social-icon">
+            <div class="social-icon col-2">
               <a href="#">
                 <i class="fab fa-twitter"></i>
               </a>
@@ -620,19 +817,11 @@
             </div>
           </div>
         </div>
-
-        <a href="javascript:void(0)" onclick="openNav()">
-          <i class="fa fa-bars"></i>
-        </a>
       </nav>
     </header>
 
     <section class="about">
-      <img
-        src="./assets/images/yellow_top_wave_01.png"
-        alt=""
-        style="width: 22rem; height: 5rem"
-      />
+      <img src="./assets/images/yellow_top_wave_01.png" alt="" />
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-6">
@@ -640,12 +829,7 @@
             <h1>The language teaching experts</h1>
           </div>
           <div class="col-lg-6">
-            <img
-              src="./assets/images/hero_team.png"
-              class="mx-auto"
-              alt=""
-              style="width: 22rem; height: 20rem"
-            />
+            <img src="./assets/images/hero_team.png" class="mx-auto" alt="" />
           </div>
         </div>
       </div>
@@ -843,7 +1027,7 @@
       <img src="./assets/images/accent_bottom_wave_01.png" alt="" />
       <div class="container-fluid">
         <div class="row">
-          <div class="footer__item col-md-6 col-lg-3">
+          <div class="footer__item col-md-6 col-lg-3" id="footer__item-1">
             <h3>Contact Us</h3>
             <ul type="none">
               <li>
@@ -876,7 +1060,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__item col-md-6 col-lg-3">
+          <div class="footer__item col-md-6 col-lg-3" id="footer__item-2">
             <h3>Quick Links</h3>
             <ul type="none">
               <li>
@@ -893,7 +1077,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__item col-md-6 col-lg-3">
+          <div class="footer__item col-md-6 col-lg-3" id="footer__item-3">
             <h3>About</h3>
             <ul type="none">
               <li>
@@ -910,7 +1094,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__item col-md-6 col-lg-3">
+          <div class="footer__item col-md-6 col-lg-3" id="footer__item-4">
             <h3>Newsletter</h3>
             <form action="">
               <input

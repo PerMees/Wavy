@@ -7,16 +7,20 @@ $btn-color: #ffffff;
 $bg-center-color: #dcd1f3;
 $footer-text-color: #ffffff;
 $dark-color: rgba(0, 0, 0, 0.2);
+$dark-color-1: rgba(0, 0, 0, 0.05);
 
 // Font size
+$fz--0:0.5em;
 $fz-0: 0.75rem;
 $fz-1: 0.8em;
 $fz-2: 0.875rem;
 $fz-3: 0.9em;
 $fz-4: 1rem;
+$fz-4-5: 1.1rem;
 $fz-5: 1.55rem;
 $fz-6: 3.15rem;
 $fz-7: 3.5rem;
+$fz-7-5: 3.5625rem;
 $fz-8: 3.8rem;
 
 // Font Weight
@@ -27,17 +31,28 @@ $fw-3: 700;
 $fw-4: 900;
 
 // Spacing
+
 $s-0: 1px;
 $s-1: 0.5em;
 $s-2: 0.8em;
 $s-3: 1em;
+$s-3-5: 1.5em;
+$s-3-7: 1.7em;
+$s-3-8: 1.789em;
 $s-4: 2em;
 $s-5: 3em;
+$s-5-5:3.3em;
 $s-6: 1.2em;
 $s-7: 3.3em;
+$s-7-5: 4em;
 $s-8: 5em;
 $s-9: 10em;
-$s-10: 15em;
+$s-9-2: 12em;
+$s-9-5: 14em;
+$s-9-8: 15.8em;
+$s-10: 18em;
+$s-11: 19.5em;
+$s-12: 40em;
 
 // Border Radius
 $border-radius: 50px;

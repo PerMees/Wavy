@@ -1,6 +1,7 @@
 .footer {
   margin-top: -$s-8;
   color: $footer-text-color;
+  position: relative;
   img {
     margin-top: $s-1;
   }
@@ -32,6 +33,10 @@
         background: transparent !important;
         color: rgba(0, 0, 0, 0.7) !important;
       }
+    }
+    .footer__item {
+      @include transition(all, 0.1s, ease);
+      opacity: 0;
     }
     .footer__item:first-child {
       .socialIcon a {

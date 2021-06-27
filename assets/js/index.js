@@ -26,10 +26,11 @@ $(function () {
 
 /**  Site Nav*/
 window.openNav = () => {
-  document.querySelector("#mySidenav").style.width = "80%";
-  document.querySelector("#mySidenav").style.overflowX = "visible";
-  document.querySelector("html").style.marginLeft = "80%";
-  document.querySelector("html").style.overflow = "hidden";
+  document.querySelector("#mySidenav").style.width = "300px";
+  document.querySelector("html").style.marginLeft = "300px";
+  document.querySelector("#mySidenav").style.overflowY = "visible";
+  document.querySelector(".header__nav").style.overflowX = "visible";
+  document.querySelector("html").style.overflowX = "hidden";
   document.querySelector("html").classList.add("opened");
   document.querySelectorAll(".header>nav>a").forEach((element) => {
     element.style.opacity = 0;
@@ -39,9 +40,10 @@ window.openNav = () => {
 
 window.closeNav = () => {
   document.querySelector("#mySidenav").style.width = "0";
-  document.querySelector("#mySidenav").style.overflowX = "hidden";
+  document.querySelector("#mySidenav").style.overflowY = "hidden";
   document.querySelector("html").style.marginLeft = "0";
-  document.querySelector("html").style.overflow = "visible";
+  document.querySelector(".header__nav").style.overflowX = "hidden";
+  document.querySelector("html").style.overflowX = "visible";
   document.querySelector("html").classList.remove("opened");
   document.querySelectorAll(".header>nav>a").forEach((element) => {
     element.style.opacity = 1;
@@ -53,14 +55,43 @@ window.closeNav = () => {
 /**  Change Header when srcoll*/
 window.onscroll = () => {
   let $ = (e) => document.querySelector(e);
-  if (window.scrollY > 300) {
+  if (window.innerWidth >= 1200) {
+    $("#logo").style.opacity = 0;
+    $("#logo").style.visibility = "hidden";
+  }
+  if (window.scrollY > 400) {
     $(".header").style.top = "0px";
     $(".header").classList.add("active");
-  } else if (window.scrollY > 60) {
+    if (window.innerWidth >= 1200) {
+      $(".header").style.top = "0px";
+      $(".header__nav").style.top = "0px";
+      $(".header").classList.add("activeLG");
+      $(".header__nav").classList.add("active");
+      $(".logo").style.opacity = 0;
+      $(".logo").style.visibility = "hidden";
+      $(".logo").style.maxWidth = "0";
+
+      $(".header__nav__xl>div>div>div>a>img").style.visibility = "hidden";
+      $(".header__nav__xl>div>div>div>a>img").style.opacity = "0";
+    }
+  } else if (window.scrollY > 200) {
     $(".header").style.top = "-100px";
+    $(".header__nav").style.top = "-100px";
   } else {
     $(".header").style.top = "0";
     $(".header").classList.remove("active");
+    $(".header__nav").style.top = "0";
+    if (window.innerWidth >= 1200) {
+      $(".header").style.top = "0px";
+      $(".header").classList.remove("activeLG");
+      $(".header__nav").classList.remove("active");
+      $(".logo").style.opacity = 1;
+      $(".logo").style.visibility = "visible";
+      $(".logo").style.maxWidth = "10rem";
+
+      $(".header__nav__xl>div>div>div>a>img").style.visibility = "visible";
+      $(".header__nav__xl>div>div>div>a>img").style.opacity = "1";
+    }
   }
 };
 /**  End Header when srcoll*/
@@ -114,4 +145,123 @@ const courseList = document.querySelectorAll(".course__item");
 animateOnScroll(courseList, "course__item");
 // End Courses
 
+// Footer
+const footerList = document.querySelectorAll(".footer__item");
+animateOnScroll(footerList, "footer__item");
+// End Footer
 /** End Gsap Animation */
+
+/** MediaQuery */
+const headerMediaQuery = () => {
+  let $ = (e) => document.querySelector(e);
+  if (window.innerWidth >= 1200) {
+    $(".header__nav__xl").style.display = "block";
+    // Nav hover
+    const nav = document.querySelectorAll(".header__nav__xl .myNavbar .menu>a");
+    for (let index = 0; index < nav.length; index++) {
+      const submenu = document.querySelector(
+        `.header__nav__xl .myNavbar .menu:nth-child(${index + 2}) .submenu`
+      );
+      let flag1 = false;
+      let flag2 = false;
+      nav[index].onmouseover = () => {
+        flag1 = true;
+        show(index, flag1, flag2);
+      };
+      nav[index].onmouseout = () => {
+        flag1 = false;
+        show(index, flag1, flag2);
+      };
+      submenu.onmouseover = () => {
+        flag2 = true;
+        show(index, flag1, flag2);
+      };
+      submenu.onmouseout = () => {
+        flag2 = false;
+        show(index, flag1, flag2);
+      };
+    }
+    const show = (index, ...flags) => {
+      const submenu = document.querySelector(
+        `.header__nav__xl .myNavbar .menu:nth-child(${index + 2}) .submenu`
+      );
+      let flag = true;
+      for (let i = 0; i < flags.length; i++) {
+        if (flags[i]) {
+          flag = true;
+          break;
+        }
+        flag = false;
+      }
+      if (flag) {
+        submenu.style.opacity = 1;
+        submenu.style.visibility = "visible";
+      } else {
+        submenu.style.opacity = 0;
+        submenu.style.visibility = "hidden";
+      }
+    };
+    // End Nav Hover lv1
+    // Nav hover lv2
+    let flaglv2_1 = false;
+    let flaglv2_2 = false;
+    let flaglv2_3 = false;
+    let flaglv2_4 = false;
+    $(".btnsubmenu-right-1").onmouseover = () => {
+      flaglv2_1 = true;
+      showlv2(flaglv2_1, flaglv2_2);
+    };
+    $(".submenu-right-1").onmouseover = () => {
+      flaglv2_2 = true;
+      showlv2(flaglv2_1, flaglv2_2);
+    };
+    $(".btnsubmenu-right-1").onmouseout = () => {
+      flaglv2_1 = false;
+      showlv2(flaglv2_1, flaglv2_2);
+    };
+    $(".submenu-right-1").onmouseout = () => {
+      flaglv2_2 = false;
+      showlv2(flaglv2_1, flaglv2_2);
+    };
+    $(".btnsubmenu-right-2").onmouseover = () => {
+      flaglv2_3 = true;
+      showlv2(flaglv2_3, flaglv2_4);
+    };
+    $(".submenu-right-2").onmouseover = () => {
+      flaglv2_4 = true;
+      showlv2(flaglv2_3, flaglv2_4);
+    };
+    $(".btnsubmenu-right-2").onmouseout = () => {
+      flaglv2_3 = false;
+      showlv2(flaglv2_3, flaglv2_4);
+    };
+    $(".submenu-right-2").onmouseout = () => {
+      flaglv2_4 = false;
+      showlv2(flaglv2_3, flaglv2_4);
+    };
+    const showlv2 = (...flags) => {
+      if (!flaglv2_1) {
+        $(".submenu-right-1").style.opacity = 0;
+        $(".submenu-right-1").style.visibility = "hidden";
+      } else if (flaglv2_1 || flaglv2_2) {
+        $(".submenu-right-1").style.opacity = 1;
+        $(".submenu-right-1").style.visibility = "visible";
+      }
+      if (!flaglv2_3) {
+        $(".submenu-right-2").style.opacity = 0;
+        $(".submenu-right-2").style.visibility = "hidden";
+      } else if (flaglv2_3 || flaglv2_4) {
+        $(".submenu-right-2").style.opacity = 1;
+        $(".submenu-right-2").style.visibility = "visible";
+      }
+    };
+
+    // End Nav Hover lv2
+    // Done Nav Hover
+  } else {
+    $(".header__nav__xl").style.display = "none";
+  }
+};
+headerMediaQuery();
+window.onresize = () => headerMediaQuery();
+/** End Media Query */

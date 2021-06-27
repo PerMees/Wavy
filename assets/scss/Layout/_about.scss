@@ -1,0 +1,8 @@
+.about {
+  margin-top: $s-5;
+  margin-bottom: -$s-8;
+
+  @include mediaQuery($xl) {
+    margin-top: 0;
+  }
+}
