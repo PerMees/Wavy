@@ -29,15 +29,15 @@ a.myBtn {
 a.myPrimaryBtn {
   @extend .myBtn;
   @include box-shadow(0, 0, 0, $s-5, $primary-color, inset);
-  color: $btn-color;
+  color: $btn-color !important;
   &:hover {
-    color: $primary-color;
+    color: $primary-color !important;
     @include box-shadow(0, 0, 0, 1px, $primary-color, inset);
     i {
-      color: $primary-color;
+      color: $primary-color !important;
     }
   }
   i {
-    color: $btn-color;
+    color: $btn-color !important;
   }
 }

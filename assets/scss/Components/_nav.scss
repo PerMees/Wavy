@@ -1,0 +1,136 @@
+.header__nav__xl {
+  a {
+    text-decoration: none;
+    @include text($fz-1, $fw-2, $heading-color);
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+  .myNavbar {
+    .row {
+      margin-left: auto;
+      .menu.col-2 {
+        flex: 0 0 10%;
+        max-width: 10%;
+      }
+      .menu {
+        padding: $s-3-5 0;
+        position: relative;
+        overflow: visible;
+        .submenu {
+          @include transition(all, 0.5s, ease);
+          opacity: 0;
+          visibility: hidden;
+          width: $s-12;
+          background: $bg-color;
+          padding: $s-0 $s-3-5;
+          box-shadow: 0px 5px 12px 3px rgba(0, 0, 0, 0.2);
+          position: absolute;
+          top: $s-7-5;
+          left: -$s-10;
+          &::after {
+            content: "";
+            background-color: $primary-color;
+            position: absolute;
+            display: block;
+            width: $fz-0;
+            height: $fz-0;
+            top: -$s-3;
+            left: $s-11;
+            border-radius: $border-rounded;
+          }
+          a {
+            display: block;
+            border-top: $s-0 solid rgba(0, 0, 0, 0.2);
+            padding: $s-3 0;
+          }
+          > div > a:first-child {
+            border-top: none;
+          }
+        }
+      }
+      .menu:nth-child(2) .submenu,
+      .menu:nth-child(7) .submenu {
+        padding: $s-0;
+      }
+      .menu:nth-child(3) .submenu,
+      .menu:nth-child(4) .submenu,
+      .menu:nth-child(5) .submenu,
+      .menu:nth-child(6) .submenu {
+        flex-direction: column;
+        width: $s-9-5;
+        top: $s-7-5;
+        left: 0;
+        &::after {
+          left: $s-3-7;
+        }
+        > a:first-child {
+          border-top: none;
+        }
+      }
+
+      .menu:nth-child(5) .submenu {
+        .btnsubmenu-right-1,
+        .btnsubmenu-right-2 {
+          &::after {
+            content: "";
+            background-color: $primary-color;
+            position: absolute;
+            display: block;
+            width: $fz--0;
+            height: $fz--0;
+            top: $s-9-8;
+            right: $s-4;
+            border-radius: $border-rounded;
+          }
+        }
+        .btnsubmenu-right-2 {
+          &::after {
+            top: $s-11;
+          }
+        }
+        .submenu-right-1,
+        .submenu-right-2 {
+          @include transition(all, 0.3s, ease);
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          top: 65%;
+          right: -$s-9-5;
+          width: $s-9-5;
+          background: $bg-color;
+          padding: $s-0 $s-3-5;
+          box-shadow: 0px 5px 12px 3px rgba(0, 0, 0, 0.2);
+        }
+        .submenu-right-2 {
+          top: 82%;
+        }
+      }
+
+      .menu.active {
+        .active-icon {
+          @include transition(all, 0.3s, ease);
+          content: "";
+          background-color: $primary-color;
+          position: absolute;
+          display: block;
+          width: $fz--0;
+          height: $fz--0;
+          top: $s-6-5;
+          left: $s-3-8;
+          border-radius: $border-rounded;
+        }
+      }
+    }
+  }
+
+  .myPrimaryBtn {
+    padding: 0 $s-2;
+    margin-top: $s-1;
+    color: $btn-color;
+  }
+
+  .social-icon {
+    padding-top: $s-3;
+  }
+}

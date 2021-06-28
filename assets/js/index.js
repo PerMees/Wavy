@@ -37,7 +37,6 @@ window.openNav = () => {
     element.style.visibility = "hidden";
   });
 };
-
 window.closeNav = () => {
   document.querySelector("#mySidenav").style.width = "0";
   document.querySelector("#mySidenav").style.overflowY = "hidden";
@@ -132,23 +131,19 @@ tl.fromTo(
   ">-0.3"
 );
 // End Animation Carousel
-
 // Team
-
 const teamList = document.querySelectorAll(".team__item");
 animateOnScroll(teamList, "team__item");
-
 // End Team
-
 // Courses
 const courseList = document.querySelectorAll(".course__item");
 animateOnScroll(courseList, "course__item");
 // End Courses
-
 // Footer
 const footerList = document.querySelectorAll(".footer__item");
 animateOnScroll(footerList, "footer__item");
 // End Footer
+
 /** End Gsap Animation */
 
 /** MediaQuery */
@@ -196,9 +191,15 @@ const headerMediaQuery = () => {
       if (flag) {
         submenu.style.opacity = 1;
         submenu.style.visibility = "visible";
+        $(".active-icon").style.opacity = 0;
+        $(".active-icon").style.visibility = "hidden";
+        $(".active-icon").style.transform = "scale(1.4)";
       } else {
         submenu.style.opacity = 0;
         submenu.style.visibility = "hidden";
+        $(".active-icon").style.opacity = 1;
+        $(".active-icon").style.visibility = "visible";
+        $(".active-icon").style.transform = "scale(1)";
       }
     };
     // End Nav Hover lv1
@@ -255,7 +256,6 @@ const headerMediaQuery = () => {
         $(".submenu-right-2").style.visibility = "visible";
       }
     };
-
     // End Nav Hover lv2
     // Done Nav Hover
   } else {
